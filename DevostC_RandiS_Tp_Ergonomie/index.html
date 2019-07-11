@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+
+<!--
+*   Auteur : Cédric Devost/Randi Skjerven
+*   Date : 01-12-2018
+*   Description : Accueil du site de Québécor
+*   URL : index.html
+-->
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Accueil du site de Québécor">
+    <meta name="keywords" content="Transport, autobus. trajet, recherche, billets accueil, infos, informations">
+    <meta name="author" content="Cédric Devost/Randi Skjerven">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Poppins" rel="stylesheet">
+    <title>Accueil</title>
+</head>
+
+<!-- Body -->
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/atelier5%20logo%20trajan%20pro%20version%203.png"></a>
+            <img id="slogan"  src="images/slogan.png">
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html" title="Accueil">Accueil</a></li>
+                <li><a href="carte.html" title="carte du réseau">Carte du Réseau</a></li>
+                <li><a href="#" title="Nos Tarifs">Nos Tarifs</a></li>
+                <li><a href="#" title="Nous contacter">Nous Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu de la page Index -->
+    <main id="pageIndex">
+        <section>
+            <h2>Où désirez-vous aller?</h2>
+
+            <article>
+                <form name="formulaire" >
+                    <label>Ville de Départ</label>
+                    <select>
+                        <option>Montréal</option>
+                        <option>L'Assomption</option>
+                        <option>Berthierville</option>
+                        <option>Louiseville</option>
+                        <option>Trois-Rivières</option>
+                        <option>Sainte-Anne-de-la-Pérade</option>
+                        <option>Donacona</option>
+                        <option>Ste-Foy</option>
+                        <option>Québec</option>
+                    </select>
+                    <label>Ville d'Arrivée</label>
+                    <select>
+                        <option>Montréal</option>
+                        <option>L'Assomption</option>
+                        <option>Berthierville</option>
+                        <option>Louiseville</option>
+                        <option>Trois-Rivières</option>
+                        <option>Sainte-Anne-de-la-Pérade</option>
+                        <option>Donacona</option>
+                        <option>Ste-Foy</option>
+                        <option>Québec</option>
+                    </select><br /><br />
+                    <label>Date de Départ</label>
+                    <input type="date" required /><br /><br />
+                    <label>Aller-Simple</label>
+                    <input type="radio" name="alle" value="simple" checked="checked" />
+                    <label>Aller-Retour</label>
+                    <input type="radio" name="alle" value="retour" />
+                    <div id="retour">
+                    <label>Date de Retour</label>
+                    <input type="date" />
+                    </div>
+                    <p>Nombre de voyageurs</p>
+                    <label>Adulte(s)</label>
+                    <input type="number" value="0" min="0" />
+                    <label>Enfants(s)</label>
+                    <input type="number" value="0" min="0"/>
+                    <label>Ainé(s)</label>
+                    <input type="number" value="0" min="0"/><br /><br />
+                    <input type="submit" value="Rechercher" />
+                </form>
+            </article>
+        </section>
+
+        <section>
+            <h2>Un service de transport qui va plus loin...</h2>
+
+            <p>Proin venenatis enim semper</p>
+
+            <div>
+                <aside>
+                    <img src="images/abribus.jpg" alt="Abribus">
+                    <h6>Fiabilité</h6>
+                    <p>Vestibulum blandit semper nunc. Praesent tempus a justo ut luctus. Mauris luctus in quam eget iaculis. Nullam in leo fermentum, dignissim neque eget, semper urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </aside>
+                <aside>
+                    <img src="images/madame.jpg" alt="Madame">
+                    <h6>Sécurité</h6>
+                    <p>Vestibulum blandit semper nunc. Praesent tempus a justo ut luctus. Mauris luctus in quam eget iaculis. Nullam in leo fermentum, dignissim neque eget, semper urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </aside>
+                <aside>
+                    <img src="images/sieges.jpg" alt="Sieges">
+                    <h6>Confort</h6>
+                    <p>Vestibulum blandit semper nunc. Praesent tempus a justo ut luctus. Mauris luctus in quam eget iaculis. Nullam in leo fermentum, dignissim neque eget, semper urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section>
+            <h2>Médias Sociaux</h2>
+            <p>Proin venenatis enim semper</p>
+
+            <!-- Beaucoup d'imbrication de DIV pour faciliter le positionnement avec les flexbox -->
+            <div>
+                <div>
+                    <aside>
+                        <a href="#"><img src="images/iconFb.png" alt="Facebook"></a>
+                        <div>
+                            <h3>Facebook</h3>
+                            <p>Ut eget justo tellus. Suspendisse at mattis urna. Phasellus nec laoreet enim, eget euismod odio. Sed vel ligula elementum, tincidunt purus in, vulputate leo. Suspendisse.</p>
+                        </div>
+                    </aside>
+                    <aside>
+                        <a href="#"><img src="images/iconIg.png" alt="Instagram"></a>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>Ut eget justo tellus. Suspendisse at mattis urna. Phasellus nec laoreet enim, eget euismod odio. Sed vel ligula elementum, tincidunt purus in, vulputate leo. Suspendisse.</p>
+                        </div>
+                    </aside>
+                </div>
+                <div>
+                    <aside>
+                        <a href="#"><img src="images/iconLi.png" alt="LinkedIn"></a>
+                        <div>
+                            <h3>Linked'In</h3>
+                            <p>Ut eget justo tellus. Suspendisse at mattis urna. Phasellus nec laoreet enim, eget euismod odio. Sed vel ligula elementum, tincidunt purus in, vulputate leo. Suspendisse.</p>
+                        </div>
+                    </aside>
+                    <aside>
+                        <a href="#"><img src="images/iconTt.png" alt="Twitter"></a>
+                        <div>
+                            <h3>Twitter</h3>
+                            <p>Ut eget justo tellus. Suspendisse at mattis urna. Phasellus nec laoreet enim, eget euismod odio. Sed vel ligula elementum, tincidunt purus in, vulputate leo. Suspendisse.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+    </main>
+    <footer>
+        <section>
+            <aside>
+                <h3>Donec Dictum Metus</h3>
+                <p> Suspendisse at mattis urna.</p>
+            </aside>
+            <aside>
+                <h3>Donec Dictum Metus</h3>
+                <p>Phasellus nec laoreet enim, eget euismod odio</p>
+            </aside>
+        </section>
+
+        <section>
+            <aside>
+                <a href="#"> Praesent tincidunt blandit eros</a><br />
+                <a href="#">Lorem ipsum dolor sit amet</a><br />
+                <a href="#">Fusce malesuada vestibulum neque</a><br />
+                <a href="#">Praesent tempus a justo ut luctus</a>
+            </aside>
+            <aside>
+                <a href="#"> Praesent tincidunt blandit eros</a><br />
+                <a href="#">Lorem ipsum dolor sit amet</a><br />
+                <a href="#">Fusce malesuada vestibulum neque</a><br />
+                <a href="#">Praesent tempus a justo ut luctus</a>
+            </aside>
+            <aside>
+                <p> Adresse : 2030 bld Pie-IX<br />
+                    Montréal, Québec</p>
+                <p>Couriel : Québécar@TP2.com</p>
+                <p>Telephone : 514-555-5555</p>
+            </aside>
+        </section>
+
+        <section>
+            <aside>
+                <p>Copyright &copy; 2018</p>
+            </aside>
+        </section>
+    </footer>
+</body>
+
+</html>
